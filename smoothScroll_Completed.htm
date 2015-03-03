@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smooth Scroll</title>
+    <link rel="stylesheet" href="css/smoothscroll.css" type="text/css" />
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script>
+         $(function() {
+             
+            var webpage = $('html,body');
+             
+            $('.navLinks').on('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                webpage.stop().animate({
+                   scrollTop:$($(this).attr('href')).offset().top
+               }, 2000, "easeInOutQuint");
+            }); 
+            
+            $('#top').on('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                webpage.stop().animate({
+                   scrollTop:0
+               }, 2000, "easeInOutQuint"); 
+               return false;
+            });
+            
+            $(window).on('wheel', function(e) {
+                e.stopPropagation();
+                e.preventDefault();  
+                var scrollAmt = e.originalEvent.wheelDelta > 0 ? '-=350' : '+=350';
+                webpage.stop().animate({
+                  scrollTop:scrollAmt
+                },500,"linear");
+             });
+             
+         });
+     </script>
+    <title>Smooth Scroll</title>
+</head>
+<body>
+    <div class="container">
+        <a href="#" id="top">Top</a>
+        <div class="navPane">
+            <div class="navBody">
+                <h1 id="title">The Storybook</h1>
+                <ul class="menu">
+                    <li><a href="#story1" class="navLinks">High &amp; Lifted Up</a></li>
+                    <li><a href="#story2" class="navLinks">End of the Line</a></li>
+                    <li><a href="#story3" class="navLinks">Rapunzel</a></li>
+                    <li><a href="#story4" class="navLinks">Mr.Sticky</a></li>
+                </ul>
+            </div>
+        </div>
+         <section class="panels green">
+            <div class="content">
+                <h1 class="bigFont">Only the Best Short Stories</h1>
+            </div>
+        </section>
+        <section class="panels pink" id="story1">
+            <div class="content">
+                <h2 class="storyTitle">High &amp; Lifted Up</h2>
+                <h3 class="author">Mike Krath</h3>
+                <hr>
+                <p>It was a windy day.<br><br>
+
+     The mailman barely made it to the front door. When the door opened, Mrs. Pennington said, "hello", but, before she had a real chance to say "thank you", the mail blew out of the mailman's hands, into the house and the front door slammed in his face. Mrs. Pennington ran to pick up the mail.
+<br><br>
+     "Oh my," she said.
+<br><br>
+     Tommy was watching the shutters open and then shut, open and then shut.
+<br><br>
+     "Mom," he said, "may I go outside?"
+<br><br>
+     "Be careful," she said. "It's so windy today."
+<br><br>
+     Tommy crawled down from the window-seat and ran to the door. He opened it with a bang. The wind blew fiercely and snatched the newly recovered mail from Mrs. Pennington's hands and blew it even further into the house.
+<br><br>
+     "Oh my," she said again. Tommy ran outside and the door slammed shut.
+<br><br>
+     Outside, yellow, gold, and red leaves were leaping from swaying trees, landing on the roof, jumping off the roof, and then chasing one another down the street in tiny whirlwinds of merriment.
+<br><br>
+     Tommy watched in fascination.
+<br><br>
+     "If I was a leaf, I would fly clear across the world," Tommy thought and then ran out into the yard among the swirl of colors.
+<br><br>
+     Mrs. Pennington came to the front porch.
+<br><br>
+     "Tommy, I have your jacket. Please put it on."
+<br><br>
+     However, there was no Tommy in the front yard.
+<br><br>
+     "Tommy?"
+<br><br>
+     Tommy was a leaf. He was blowing down the street with the rest of his play-mates.
+<br><br>
+     A maple leaf came close-by, touched him and moved ahead. Tommy met him shortly, brushed against him, and moved further ahead. They swirled around and around, hit cars and poles, flew up into the air and then down again.
+<br><br>
+
+     "This is fun," Tommy thought.
+<br><br>
+     The maple leaf blew in front of him. It was bright red with well-defined veins. The sun-light shone through it giving it a brilliance never before seen by a little boy's eyes.
+</p>
+            </div>
+        </section>
+        
+        <section class="panels purple" id="story2">
+            <div class="content">
+                <h2 class="storyTitle whitefont">End of the Line</h2>
+                <h3 class="author whitefont">Alison. L. Randall</h3>
+                <hr>
+                <p class="whitefont">When Frank and I stepped through the post office doors, there was a crowd gathered, gawking at the new fixture on the wall like a chorus of wide-mouthed frogs. I had to get closer, and that was where being a girl that's scrawnier than a wire fence came in handy. Fortunately, Frank, my twin of eleven years, was just the same.
+<br><br>
+     "Come on." I said, grabbing his hand, and we slid through the cracks between people until we spilled out in front.
+<br><br>
+     Finally I got a good look. It was fixed to the plaster next to the postmaster's window, the place of honor usually reserved for the Wanted posters. Beady-eyed Zedekiah Smith, the bank robber, still hung there, but even he had been pushed aside for something more important.
+<br><br>
+     A telephone. The first one in town.
+<br><br>
+     "How's it work?" Noah Crawford called out. Noah's the best fix-it man around, and I could tell he was itching to get his fingers on those shiny knobs.
+<br><br>
+     "Don't rightly know," answered the postmaster, and he tugged at his goatee as if it might tell him. "I do know the sound of your voice moves along wires strung on poles. It's sort of like the telegraph, only you hear words instead of dots and dashes."
+<br><br>
+     "Ah," the crowd murmured, and I felt my own mouth move along.
+<br><br>
+     I gazed at that gleaming wood box and something happened inside me. Something — I can only guess — that might be like falling in love. The thought of talking into that box — of making my voice sail through wires in the sky — it took over my brain. I couldn't get it out.
+<br><br>
+     "Frank," I whispered to my twin. "I have to use that telephone."
+<br><br>
+     Five minutes later, Frank towed me up Main Street, toward home. "Liza — " he began, but I cut him off. We two thought so much alike, I had Frank's questions answered before he even asked.
+    <br><br> 
+      "You're right," I said. "It costs five cents and I don't have it. But look." I pulled him over to the window of Poulson's Variety Store. "You see those?"
+<br><br>
+     I pointed to a handful of shimmery rocks spread on black velvet. Some were a shiny gray shot through with gold streaks, others yellow as cheese curds. And one, clear and jagged, sat like an icicle, leftover from wintertime.
+<br><br>
+     Frank's eyebrows screwed up and I could tell he wasn't following.
+<br><br>
+     "If I found one of those, I bet they'd pay me for it." I explained.
+<br><br>
+     With a shake of his head, Frank hooked two thumbs under his suspenders. "But Liza — "
+
+    <br><br> I held up a hand — he couldn't tell me anything I didn't already know. "I've got that figured, too. I'll bet we could find some at North Creek — in the mine."
+<br><br>
+     Frank shrugged, pretending not to care, but I knew better. He wanted to explore that old mine, same as me. Besides, Frank knew he had no choice. Twins stick together, especially scrawny ones, 'cause it takes two of us to make one of most people.
+<br><br>
+     We spent half the morning on the dusty road to North Creek. Ma packed a lunch but said she couldn't understand walking all that way for rocks. She thought we were off to search the dry creek bed, and I didn't correct her.
+<br><br>
+     I felt a bit guilty about fooling my ma, but whenever a pang hit, I conjured up the vision of my voice dancing along wires in the sky. It looked a lot like me, my voice did, only wearing a pink tutu and carrying a frilly umbrella.
+
+</p>
+            </div>
+        </section>
+        
+        <section class="panels yellow" id="story3">
+            <div class="content">
+                <h2 class="storyTitle whitefont">Rapunzel</h2>
+                <h3 class="author whitefont">Brothers Grimm</h3>
+                <hr>
+                <p class="whitefont">
+                   There were once a man and a woman who had long, in vain, wished for a child. At length it appeared that God was about to grant their desire.
+<br><br>
+     These people had a little window at the back of their house from which a splendid garden could be seen, which was full of the most beautiful flowers and herbs. It was, however, surrounded by a high wall, and no one dared to go into it because it belonged to an enchantress, who had great power and was dreaded by all the world.
+<br><br>
+     One day the woman was standing by this window and looking down into the garden, when she saw a bed which was planted with the most beautiful rampion, and it looked so fresh and green that she longed for it. She quite pined away, and began to look pale and miserable.
+<br><br>
+     Her husband was alarmed, and asked: 'What ails you, dear wife?'
+<br><br>
+     'Ah,' she replied, 'if I can't eat some of the rampion, which is in the garden behind our house, I shall die.'
+<br><br>
+     The man, who loved her, thought: 'Sooner than let your wife die, bring her some of the rampion yourself, let it cost what it will.'
+<br><br>
+     At twilight, he clambered down over the wall into the garden of the enchantress, hastily clutched a handful of rampion, and took it to his wife. She at once made herself a salad of it, and ate it greedily. It tasted so good to her - so very good, that the next day she longed for it three times as much as before.
+<br><br>
+     If he was to have any rest, her husband knew he must once more descend into the garden. Therefore, in the gloom of evening, he let himself down again; but when he had clambered down the wall he was terribly afraid, for he saw the enchantress standing before him.
+<br><br>
+     'How can you dare,' said she with angry look, 'descend into my garden and steal my rampion like a thief? You shall suffer for it!'
+<br><br>
+ 'Ah,' answered he, 'let mercy take the place of justice, I only made up my mind to do it out of necessity. My wife saw your rampion from the window, and felt such a longing for it that she would have died if she had not got some to eat.'
+<br><br>
+     The enchantress allowed her anger to be softened, and said to him: 'If the case be as you say, I will allow you to take away with you as much rampion as you will, only I make one condition, you must give me the child which your wife will bring into the world; it shall be well treated, and I will care for it like a mother.'
+<br><br>
+     The man in his terror consented to everything.
+<br><br>
+     When the woman was brought to bed, the enchantress appeared at once, gave the child the name of Rapunzel, and took it away with her.
+<br><br>
+     Rapunzel grew into the most beautiful child under the sun. When she was twelve years old, the enchantress shut her into a tower in the middle of a forest. The tower had neither stairs nor door, but near the top was a little window. When the enchantress wanted to go in, she placed herself beneath it and cried:
+<br><br>
+ 
+
+'Rapunzel, Rapunzel, 
+Let down your hair to me.'
+ <br><br>
+
+     Rapunzel had magnificent long hair, fine as spun gold, and when she heard the voice of the enchantress, she unfastened her braided tresses, wound them round one of the hooks of the window above, and then the hair fell twenty ells down, and the enchantress climbed up by it.
+<br><br>
+     After a year or two, it came to pass that the king's son rode through the forest and passed by the tower. Then he heard a song, which was so charming that he stood still and listened. It was Rapunzel, who in her solitude passed her time in letting her sweet voice resound. The king's son wanted to climb up to her, and looked for the door of the tower, but none was to be found. He rode home, but the singing had so deeply touched his heart, that every day he went out into the forest and listened to it.
+                </p>
+            </div>
+        </section>
+        
+        <section class="panels teal" id="story4">
+            <div class="content">
+                <h2 class="storyTitle">Mr.Sticky</h2>
+                <h3 class="author">Mo McAuley</h3>
+                <hr>
+                <p>
+                  No one knew how Mr. Sticky got in the fish tank.
+<br><br>
+     "He's very small," Mum said as she peered at the tiny water snail. "Just a black dot."
+<br><br>
+     "He'll grow," said Abby and pulled her pyjama bottoms up again before she got into bed. They were always falling down.
+<br><br><br><br>
+ 
+
+In the morning Abby jumped out of bed and switched on the light in her fish tank.
+<br><br>
+     Gerry, the fat orange goldfish, was dozing inside the stone archway. Jaws was already awake, swimming along the front of the tank with his white tail floating and twitching. It took Abby a while to find Mr. Sticky because he was clinging to the glass near the bottom, right next to the gravel.
+<br><br>
+     At school that day she wrote about the mysterious Mr. Sticky who was so small you could mistake him for a piece of gravel. Some of the girls in her class said he seemed an ideal pet for her and kept giggling about it.
+<br><br>
+     That night Abby turned on the light to find Mr. Sticky clinging to the very tiniest, waviest tip of the pond weed. It was near the water filter so he was bobbing about in the air bubbles.
+<br><br>
+     "That looks fun," Abby said. She tried to imagine what it must be like to have to hang on to things all day and decided it was probably very tiring. She fed the fish then lay on her bed and watched them chase each other round and round the archway. When they stopped Gerry began nibbling at the pond weed with his big pouty lips. He sucked Mr. Sticky into his mouth then blew him back out again in a stream of water. The snail floated down to the bottom of the tank among the coloured gravel.
+<br><br><br><br>
+ 
+
+"I think he's grown a bit," Abby told her Mum at breakfast the next day.
+<br><br>
+ "Just as well if he's going to be gobbled up like that," her Mum said, trying to put on her coat and eat toast at the same time.
+<br><br>
+     "But I don't want him to get too big or he won't be cute anymore. Small things are cute aren't they?"
+<br><br>
+     "Yes they are. But big things can be cute too. Now hurry up, I'm going to miss my train."
+<br><br><br><br>
+ 
+
+At school that day, Abby drew an elephant. She needed two pieces of expensive paper to do both ends but the teacher didn't mind because she was pleased with the drawing and wanted it on the wall. They sellotaped them together, right across the elephant's middle. In the corner of the picture, Abby wrote her full name, Abigail, and drew tiny snails for the dots on the 'i's The teacher said that was very creative.
+<br><br>
+     At the weekend they cleaned out the tank. "There's a lot of algae on the sides," Mum said. "I'm not sure Mr. Sticky's quite up to the job yet."
+     <br><br>
+     They scooped the fish out and put them in a bowl while they emptied some of the water. Mr. Sticky stayed out of the way, clinging to the glass while Mum used the special 'vacuum cleaner' to clean the gravel. Abby trimmed the new pieces of pond weed down to size and scrubbed the archway and the filter tube. Mum poured new water into the tank.
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
