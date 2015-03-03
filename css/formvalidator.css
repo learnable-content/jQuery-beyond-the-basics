@@ -1,0 +1,121 @@
+.container {
+    position: absolute;
+    width:440px;
+    height:432px;
+    padding:10px;
+    border:1px solid;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin:auto;
+}
+
+.formHolder {
+    position: relative;
+    width:440px;
+    height:50px;
+    margin-bottom:5px;
+}
+
+.labelHolder {
+    position: absolute;
+    width:130px;
+    height:50px;
+    background:rgba(200,200,0,0.2);
+}
+
+.fieldHolder {
+    position: relative;
+    height:50px;
+    background:red;
+    left:130px;
+    width:308px;
+}
+
+.labelHolder > label {
+    font-family: sans-serif;
+    position: absolute;
+    top: 0px;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0px;
+    top: 16px;
+    left: 3px;
+}
+
+input {
+    font-size:30px;
+    padding:8px;
+    width:292px;
+    outline:0px;
+    border:none;
+}
+
+textarea {
+    font-size:20px;
+    padding:8px;
+    width:292px;
+    height:100px;
+    outline:0px;
+    border:none;
+}
+
+.inflated {
+    height:50px;
+}
+
+.pushdown01 {
+    top:66px;
+    height:116px;
+}
+
+#submitForm {
+    background:green;
+    padding:10px;
+    position: absolute;
+    font-family:sans-serif;
+    color:#FFF;
+    text-decoration:none;
+    width:100px;
+    text-align:center;
+    left:130px;
+}
+
+/* Parsley Styles */
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  color: #000;
+  background-color: #FFF;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: rgb(255,0,0);
+  background-color: #F2DEDE;
+}
+
+.parsley-errors-list {
+    position: absolute;
+    top: 0px;
+    left: 343px;
+    width: 250px;
+    border: 1px solid;
+    font-family: sans-serif;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: rgb(250, 42, 42);
+    color: #FFF;
+    display:none;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.filled {
+    display:block;
+    padding: 16px;
+}
+
