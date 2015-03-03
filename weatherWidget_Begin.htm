@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Widget</title>
+    <link rel="stylesheet" href="css/fetchingContent.css" type="text/css" />
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script>
+        $(function() {
+           
+           var status = $('#status');
+           
+           (function getGeoLocation() {
+                status.text('Getting Location...');
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(function(position) {
+                        var lat = position.coords.latitude;
+                        var long = position.coords.longitude;
+                        
+                        // Use Google Geocoding API to get the city & country name
+                        getCityName(lat,long);
+                        
+                        // Use forecast.io to get Weather
+                        getWeather(lat,long);
+                        
+                    });
+                } else {
+                    status.text("Your browser doesn't support Geolocation !");
+                }
+                
+           })();
+           
+           function getCityName(lat,long) {
+                // Query the Google Maps Geocoding API using AJAX to get the name of the city
+           }
+           
+           function getWeather(lat,long) {
+               status.text('Getting Current Weather...');
+                // Query the Forecast.io API using AJAX to get the current weather for the location  
+           }
+           
+            
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div id="cover"><div id="status">Loading...</div></div>
+        <h1 class="tempDisplay"><span id="currentTemp">12</span> &deg;C</h1>
+        <h2 id="cityDisplay">New York</h2>
+        <hr class="divider" />
+        <p id="summary">Cloudy with a chance of Meatballs</p>
+    </div>
+</body>
+</html>
