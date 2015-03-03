@@ -1,0 +1,155 @@
+body,html {
+    margin:0px;
+    width:100%;
+    height:100%;
+    position: relative;
+}
+
+.navPane {
+    position: fixed;
+    top:0px;
+    left:0px;
+    background:#FFF;
+    height:60px;
+    width:100%;
+    /*min-width: 1024px;*/
+    z-index:1;
+}
+
+.navBody {
+    position: absolute;
+    width:1024px;
+    height:60px;
+    
+    left:0;
+    right:0;
+    margin:auto;
+}
+
+.panels {
+    position: relative;
+    width:100%;
+    min-width:1024px;
+    height:960px;
+    /*margin-bottom:2px;*/
+}
+
+.panels > .content {
+    position: relative;
+    width:1004px;
+    left:0;
+    right:0;
+    height:960px;
+    margin:auto;
+    padding:10px;
+}
+
+.green {
+    background:rgb(41, 200, 47);
+    background-image:url(../img/greenbg.jpg);
+    background-size:cover;
+    margin-top:50px;
+}
+
+.bigFont {
+    position: absolute;
+    font-size:80px;
+    width:450px;
+    height:273px;
+    top:100px;
+}
+
+.pink {
+    background:rgb(245, 170, 203);
+}
+
+.purple {
+    background:rgb(84, 0, 61);
+}
+
+.yellow {
+    background:rgb(195, 192, 15);
+}
+
+.teal {
+    background:rgb(163, 195, 167);
+}
+
+#title {
+    position: absolute;
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    top:12px;
+}
+
+.menu {
+    position: absolute;
+    margin:0;
+    padding:0;
+    right:30px;
+    top:20px;
+    list-style:none;
+}
+
+.menu > li {
+    position: relative;
+    width:144px;
+    float:left;
+    text-align:center;
+}
+
+.menu > li > a {
+    font-family:sans-serif;
+    text-decoration:none;
+    font-size:14px;
+    color:#000;
+    font-weight:bold;
+}
+
+.storyTitle {
+    font-family:sans-serif;
+    font-size:28px;
+    margin-bottom:0px;
+    margin-top:70px;
+}
+
+.author {
+    font-family:sans-serif;
+    font-size:18px;
+    margin-bottom:0px;
+}
+
+.content > p {
+    font-family:sans-serif;
+    font-size:14px;
+}
+
+hr {
+    border:1px solid rgba(0,0,0,0.3);
+}
+
+.whitefont {
+    color:#FFF;
+}
+
+#top {
+    position: fixed;
+    width:50px;
+    height:50px;
+    background:rgb(200,200,200);
+    bottom:30px;
+    right:30px;
+    z-index:9;
+    border-radius:9px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.3);
+    font-family:sans-serif;
+    text-align:center;
+    line-height:50px;
+    color:#000;
+    font-weight:bold;
+    font-size:12px;
+    text-shadow:0px 0px 1px rgba(0,0,0,0.2);
+    text-decoration:none;
+}
+
