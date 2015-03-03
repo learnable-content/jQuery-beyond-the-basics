@@ -1,0 +1,27 @@
+/* FormStyle */
+
+.formStyle {
+    position: relative;
+    padding:15px;
+    margin:5px;
+    width:330px;
+    border:none;
+    border-right:10px solid red;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+    outline:0;
+    -webkit-transition: width 500ms, background-color 500ms;
+    -moz-transition: width 500ms, background-color 500ms;
+    -ms-transition: width 500ms, background-color 500ms;
+    -o-transition: width 500ms, background-color 500ms;
+    transition: width 500ms, background-color 500ms;   
+}
+
+.activeInput {
+    width:350px;
+    background:rgba(0,255,0,0.1);
+}
+
+.filledInput {
+    border-right:10px solid rgb(100,255,0);
+}
+

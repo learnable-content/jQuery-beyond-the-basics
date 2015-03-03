@@ -1,0 +1,13 @@
+.container {
+    position: absolute;
+    width:400px;
+    height:170px;
+    padding:10px;
+    border:1px solid;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    margin:auto;
+}
+
