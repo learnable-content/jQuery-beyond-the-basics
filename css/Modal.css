@@ -1,0 +1,61 @@
+.container {
+    position: absolute;
+    width:720px;
+    height:440px;
+    border:1px solid;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    margin:auto;
+    padding:10px;
+}
+
+.options {
+    position: relative;
+    background:rgba(200,200,0,0.2);
+    height:100px;
+    width:720px;
+    margin-bottom:10px;
+    border:1px solid rgba(0,0,0,0.2);
+}
+
+.options > h1 {
+    position: absolute;
+    margin:0px;
+    font-family:sans-serif;
+    top:32px;
+    left:10px;
+}
+
+.options > .btn {
+    position: absolute;
+    background:rgb(0,200,0);
+    padding:15px;
+    font-family:sans-serif;
+    color:#FFF;
+    text-decoration:none;
+    box-shadow:0px 0px 12px rgba(0,0,0,0.4);
+    top:24px;
+    width:100px;
+    text-align:center;
+    left:200px;
+}
+
+.options > .btn:hover {
+    border:1px solid;
+    box-shadow:0px 0px 12px rgba(0,0,0,0.3);
+}
+
+.options > .outputpanel {
+    position: absolute;
+    background:rgba(0,50,200,0.7);
+    padding:10px;
+    font-family:sans-serif;
+    color:#FFF;
+    top:6px;
+    left:390px;
+    width:300px;
+    height:68px;
+    border-radius:5px;
+}

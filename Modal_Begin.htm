@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modal - VEX</title>
+    <link rel="stylesheet" href="css/Modal.css" type="text/css" />
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+   
+    <script>
+        $(function() {
+            // Set Default VEX Theme
+            
+            
+            // Confirm Button
+            $("#confirmBtn").click(function() {
+                var confirmOutput = $("#confirmOutput");
+                // Create a VEX Confirm box here...
+                
+            });
+            
+            // Alert Button
+            $("#alertBtn").click(function() {
+                // Create a Vex Alert box here...
+                
+            });
+            
+            // Prompt Button
+            $("#promptBtn").click(function() {
+                // Create a Vex Prompt box here...
+                var promptOutput = $("#promptOutput");
+                
+            });
+            
+            // Options Button
+            $("#openBtn").click(function() {
+                // Create a Custom Vex Dialog Box here...
+                var optionsOutput = $("#optionsOutput");
+                
+            });
+            
+            
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="options">
+            <h1>Confirm</h1>
+            <a href="#" class="btn" id="confirmBtn">Confirm Box</a>
+            <div class="outputpanel">
+                <p id="confirmOutput"></p>
+            </div>
+        </div>
+        <div class="options">
+            <h1>Alert</h1>
+            <a href="#" class="btn" id="alertBtn">Alert Box</a>
+        </div>
+        <div class="options">
+            <h1>Prompt</h1>
+            <a href="#" class="btn" id="promptBtn">Prompt Box</a>
+            <div class="outputpanel">
+                <p id="promptOutput"></p>
+            </div>
+        </div>
+        <div class="options">
+            <h1>Open</h1>
+            <a href="#" class="btn" id="openBtn">Open Box</a>
+            <div class="outputpanel">
+                <p id="optionsOutput"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
