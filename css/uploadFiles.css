@@ -1,0 +1,105 @@
+.container {
+    position: absolute;
+    border:1px solid black;
+    width:480px;
+    height:480px;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin:auto;
+}
+
+.top {
+    position: relative;
+    width:480px;
+    height:102px;
+    background:rgba(0,0,0,0.1);
+}
+
+input[type="file"] {
+    margin: 5px;
+    position: absolute;
+    top: 0px;
+    padding: 10px;
+    width: 200px;
+}
+
+#progressBar {
+    position: absolute;
+    bottom: 5px;
+    width: 480px;
+}
+
+
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+   appearance: none;
+
+  width: 250px;
+  height: 20px;
+}
+
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image:
+	   -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	   -webkit-linear-gradient(top, 
+	                           rgba(255, 255, 255, .25), 
+	                           rgba(0, 0, 0, .25));
+
+    border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+
+
+#uploadNow {
+    position: absolute;
+    background: rgb(66, 177, 66);
+    color: #FFF;
+    font-family: sans-serif;
+    padding: 10px;
+    text-decoration: none;
+    margin: 5px;
+    right: 0px;
+}
+
+.bottom {
+    position: relative;
+    width:460px;
+    height:356px;
+    padding:10px;
+    /*background:red;*/
+    border-top: 2px solid;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.fileList {
+    position: absolute;
+    top: 5px;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    width: 460px;
+    /* background: green; */
+    text-align: center;
+}
+
+.fileList > li {
+    padding: 10px;
+    background: rgba(0,0,0,0.02);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
