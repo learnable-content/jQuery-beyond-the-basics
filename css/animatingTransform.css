@@ -1,0 +1,50 @@
+.container {
+    position: absolute;
+    width:400px;
+    height:400px;
+    border:1px solid rgb(200,200,200);
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin:auto;
+    -webkit-perspective:200;
+    perspective:200;
+}
+
+.panel {
+    position: absolute;
+    width:300px;
+    height:100px;
+    background:rgb(200,0,0);
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    margin:auto;
+    border-top-left-radius:10px;
+    border-bottom-right-radius:10px;
+    
+}
+
+.panel > h1 {
+     position: absolute;
+    font-family:sans-serif;
+    text-align:center;
+    color:#FFF;
+    top:0px;
+    bottom:0px;
+    margin:auto;
+    height:35px;
+    width:300px;
+}
+
+#play {
+    position: absolute;
+    font-family:sans-serif;
+    padding:8px;
+    background:rgb(0,200,0);
+    color:#FFF;
+    text-decoration:none;
+    font-weight:bold;
+}
