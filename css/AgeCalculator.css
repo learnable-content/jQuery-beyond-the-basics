@@ -1,0 +1,88 @@
+.container {
+    position: absolute;
+    width:580px;
+    height:400px;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin:auto;
+    padding:15px;
+    border:1px solid rgba(0,0,0,0.2);
+    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.top {
+    position: relative;
+    text-align:left;
+    width:580px;
+    height:130px;
+    border-bottom:1px solid;
+}
+
+.bottom {
+    position: relative;
+    width:560px;
+    height:240px;
+    box-shadow:0px 0px 15px rgba(0,0,0,0.3);
+    margin-top:10px;
+    border-radius:5px;
+    background:rgb(236, 197, 104);
+    padding:10px;
+}
+
+.output {
+    font-size: 39px;
+    margin: 0px;
+    color: rgb(130, 97, 15);
+    font-weight: normal;
+    text-shadow: 0px 0px 8px rgba(185, 143, 43, 1);
+    font-style: italic;
+}
+
+input[name='username'] {
+    border:none;
+    font-family:serif;
+    font-size:30px;
+    width:260px;
+    border-bottom:2px dashed;
+    background:transparent;
+    outline:none;
+    
+}
+
+p {
+    margin:0px;
+    font-size:30px;
+    font-weight:normal;
+    float:left;
+    line-height:2;
+}
+
+input[name='dob'] {
+    border:none;
+    font-family:serif;
+    font-size:30px;
+    width:240px;
+    height:35px;
+    border-bottom:2px dashed;
+    background:transparent;
+    float:none;
+    text-align:center;
+    outline:none;
+}
+
+input[type='submit'] {
+    position: relative;
+    padding: 5px;
+    width: 80px;
+    margin: 10px;
+    float: none;
+    font-family: serif;
+    font-size: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.3);
+    border-radius: 5px;
+    border: 2px solid rgb(107, 208, 107);
+    background: #FFF;
+    outline: none;
+}
