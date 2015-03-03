@@ -1,0 +1,110 @@
+[
+  {
+    "itemcode":"M001",
+    "itemcatagory":"Mobile Phones",
+    "itemname":"Apple iPhone 5C",
+    "itemprice":655,
+    "itempic":"M001.jpg",
+    "itemkeywords":["mobile", "Apple"],
+    "itemdescription":"This is the Apple iPhone 5C"
+  },
+  {
+    "itemcode":"M002",
+    "itemcatagory":"Mobile Phones",
+    "itemname":"Moto G 16GB",
+    "itemprice":229,
+    "itempic":"M002.jpg",
+    "itemkeywords":["mobile", "Motorola"],
+    "itemdescription":"An Android smartphone that is, quite possibly, the best in its class."
+  },
+  {
+    "itemcode":"M003",
+    "itemcatagory":"Mobile Phones",
+    "itemname":"Micromax Canvas 2 Plus A110Q",
+    "itemprice":163,
+    "itempic":"M003.jpg",
+    "itemkeywords":["mobile", "Micromax"],
+    "itemdescription":"The beauty and performance of the Canvas series from Micromax."
+  },
+  {
+    "itemcode":"M004",
+    "itemcatagory":"Mobile Phones",
+    "itemname":"Samsung Galaxy Core I8262",
+    "itemprice":222,
+    "itempic":"M004.jpg",
+    "itemkeywords":["mobile", "Samsung"],
+    "itemdescription":"Packing power and usability into a small, convenient package."
+  },
+  {
+    "itemcode":"M005",
+    "itemcatagory":"Mobile Phones",
+    "itemname":"Sony Xperia C",
+    "itemprice":305,
+    "itempic":"M005.jpg",
+    "itemkeywords":["mobile", "Sony"],
+    "itemdescription":"Experience mobile technology that is built to connect easier and entertain more."
+  },
+  {
+    "itemcode":"M006",
+    "itemcatagory":"Mobile Phones",
+    "itemname":"Lenovo A390",
+    "itemprice":90,
+    "itempic":"M006.jpg",
+    "itemkeywords":["mobile", "Lenovo"],
+    "itemdescription":"A dual-core processor, large 4 inch screen and Android 4.0 Ice Cream Sandwich OS."
+  },
+  {
+    "itemcode":"M007",
+    "itemcatagory":"Mobile Phones",
+    "itemname":"Google Nexus 5",
+    "itemprice":535,
+    "itempic":"M007.jpg",
+    "itemkeywords":["mobile", "Google", "LG"],
+    "itemdescription":"Rounding off Android perfection and providing a great experience."
+  },
+  {
+    "itemcode":"B001",
+    "itemcatagory":"Books",
+    "itemname":"The Oath of the Vayuputras: Shiva Trilogy",
+    "itemprice":3.00,
+    "itempic":"B001.jpg",
+    "itemkeywords":["books", "fantasy", "fiction"],
+    "itemdescription":"India's own super hero is finally here. Shiva has risen yet again to destroy the evildoers."
+  },
+  {
+    "itemcode":"B002",
+    "itemcatagory":"Books",
+    "itemname":"The Immortals of Meluha",
+    "itemprice":5.00,
+    "itempic":"B002.jpg",
+    "itemkeywords":["books", "fantasy", "fiction"],
+    "itemdescription":"The Immortals Of Meluha is a thrilling story about a warrior named Shiva."
+  },
+  {
+    "itemcode":"B003",
+    "itemcatagory":"Books",
+    "itemname":"The Secret Of The Nagas",
+    "itemprice":5.00,
+    "itempic":"B003.jpg",
+    "itemkeywords":["books", "fantasy", "fiction"],
+    "itemdescription":"The Secret of The Nagas is a sequel to The Immortals of Meluha."
+  },
+  {
+    "itemcode":"B004",
+    "itemcatagory":"Books",
+    "itemname":"The Krishna Key",
+    "itemprice":6.99,
+    "itempic":"B004.jpg",
+    "itemkeywords":["books", "fantasy", "fiction"],
+    "itemdescription":"The Krishna Key is India's version of a novel as thrilling as the Da Vinci Code."
+  },
+  {
+    "itemcode":"B005",
+    "itemcatagory":"Books",
+    "itemname":"Big Data @ Work",
+    "itemprice":15,
+    "itempic":"B005.jpg",
+    "itemkeywords":["books", "software"],
+    "itemdescription":"This book, from the bestselling author of Competing on Analytics, Tom Davenport."
+  }
+]
