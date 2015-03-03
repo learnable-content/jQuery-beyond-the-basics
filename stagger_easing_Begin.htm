@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stagger Animation</title>
+    <link rel="stylesheet" href="css/stagger.css" type="text/css" />
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script>
+        $(function() {
+            var menuStatus = false;
+
+            function openMenu() {
+                $('.navMenu > li').each(function(index, element) {
+                    $(element).delay(200 * index).animate({
+                        height:'180px'
+                    }, 500);
+                });
+                menuStatus = true;
+            }
+
+            function closeMenu() {
+                $($('.navMenu > li').get().reverse()).each(function(index, element) {
+                    $(element).delay(200 * index).animate({
+                        height:'5px'
+                    }, 500);
+                });
+                menuStatus = false;
+            }
+
+            $('#toggleMenu').on('click', function() {
+                if(menuStatus === false) {
+                    openMenu();
+                } else {
+                    closeMenu();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <a href="#" id="toggleMenu">M</a>
+        <ul class="navMenu">
+            <li class="A"></li>
+            <li class="B"></li>
+            <li class="C"></li>
+            <li class="D"></li>
+        </ul>
+        <div class="bar"></div>
+    </div>
+</body>
+</html>
