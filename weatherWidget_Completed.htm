@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Widget</title>
+    <link rel="stylesheet" href="css/fetchingContent.css" type="text/css" />
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script>
+        $(function() {
+           
+           var status = $('#status');
+           
+           (function getGeoLocation() {
+                status.text('Getting Location...');
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(function(position) {
+                        var lat = position.coords.latitude;
+                        var long = position.coords.longitude;
+                        
+                        // Use Google Geocoding API to get the city & country name
+                        getCityName(lat,long);
+                        
+                        // Use forecast.io to get Weather
+                        getWeather(lat,long);
+                        
+                    });
+                } else {
+                    status.text("Your browser doesn't support Geolocation !");
+                }
+                
+           })();
+           
+           function getCityName(lat,long) {
+               $.get("https://maps.googleapis.com/maps/api/geocode/json?latlng=" + lat + "," + long + "&key=AIzaSyB_BVSbOjOYBxzIpHU3e2a7F0r3Vk0zezk", function(data) {
+                    $('#cityDisplay').text(data.results[6].formatted_address);
+               });
+           }
+           
+           function getWeather(lat,long) {
+               status.text('Getting Current Weather...');
+               $.get(("https://api.forecast.io/forecast/0fecca61a71bcca0bc4e5eea1cf2e002/" + lat + "," + long), {units:"si"}, function(data) {
+                   status.text('Done !');
+                   $('#currentTemp').text(data.currently.temperature);
+                   $('#summary').text(data.currently.summary);
+                   $('#cover').fadeOut(500);
+               }, "jsonp");
+           }
+           
+            
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div id="cover"><div id="status">Loading...</div></div>
+        <h1 class="tempDisplay"><span id="currentTemp">12</span> &deg;C</h1>
+        <h2 id="cityDisplay">New York</h2>
+        <hr class="divider" />
+        <p id="summary">Cloudy with a chance of Meatballs</p>
+    </div>
+</body>
+</html>
