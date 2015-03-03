@@ -1,0 +1,30 @@
+.slideShowContainer {
+    position:absolute;
+    width:800px;
+    height:440px;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    margin:auto;
+    border:1px solid black;
+    background:#000;
+    box-shadow:0px 1px 20px black;
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.slideShow {
+    position:absolute;
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+
+.slideShow > li {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+
