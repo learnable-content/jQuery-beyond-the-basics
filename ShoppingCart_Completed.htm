@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping Cart</title>
+	<link rel="stylesheet" href="css/ShoppingCart.css">
+	<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script>
+		$(function() {
+			var itm = '';
+			
+			$('#loadCatalog').on('click', function() {
+				$.getJSON("json/catalog.json", function(data) {
+					renderCatalog(data);
+				});
+			});
+			
+			
+			function renderCatalog(data) {
+				$.each(data, function(index, element) {
+						itm += '<div class="item">';
+						itm += '<div class="itempic"><img src="./img/' + element.itempic + '" /></div>';
+						itm += '<div class="itemtitle"><h4>' + element.itemname + '</h4></div>';
+						itm += '<div class="itemcost"><h5>$' + element.itemprice + '</h5></div>';
+						itm += '<div class="itemdescription"><p>' + element.itemdescription + '</p></div>';
+						itm += '<div class="addBtn"><button class="addBtn">Add to Cart</button></div>';
+						itm += '</div>';
+				});
+				
+				$('#catalog').replaceWith(itm);
+			}
+			
+		});
+	</script> 
+</head>
+<body>
+	<div class="container">
+		<div class="header"><h1>Shopping Catalog</h1> <a href="#" id="loadCatalog">Load Catalog</a></div>
+		<div class="content">
+			<div class="left" id="catalog">
+				<!-- <div class="item">-->
+				<!--	<div class="itempic"><img src="./img/B001.jpg" /></div>-->
+				<!--	<div class="itemtitle"><h4>Some Book</h4></div>-->
+				<!--	<div class="itemcost"><h5>$ 10.00</h5></div>-->
+				<!--	<div class="itemdescription"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, veniam earum aspernatur hic ullam culpa beatae ipsum placeat consequatur possimus. Eaque, maxime sequi cum laboriosam beatae et omnis error accusantium.</p></div>-->
+				<!--	<div class="addBtn"><button class="addBtn">Add to Cart</button></div>-->
+				<!--</div> -->
+
+			</div>
+			
+		</div>
+		<div class="footer"><p>(C) Shopping Catalog</p></div>
+	</div>
+</body>
+</html>
