@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SlideShow</title>
+    <link rel="stylesheet" href="css/SlideShow.css" type="text/css" />
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script>
+        $(function() {
+            var slides = $('.slideShow>li');
+            var slideCount = 0;
+            var totalSlides = slides.length;
+            var slideCache = [];
+            
+            (function preloader() {
+                if(slideCount < totalSlides) {
+                    // Load Image
+                    slideCache[slideCount] = new Image();
+                    slideCache[slideCount].src = slides.eq(slideCount).find('img').attr('src');
+                    slideCache[slideCount].onload = function() {
+                        slideCount++;
+                        preloader();
+                    }
+                } else {
+                    // Run the slideshow
+                    slideCount = 0;
+                    SlideShow();
+                }
+            }());
+            
+            
+            function SlideShow() {
+                slides.eq(slideCount).fadeIn(1000).delay(2000).fadeOut(1000, function() {
+                    slideCount < totalSlides - 1 ? slideCount++ : slideCount=0;
+                    SlideShow();
+                });
+            }
+        });
+        
+    </script>
+</head>
+<body>
+    <div class="slideShowContainer">
+        <ul class="slideShow">
+            <li><img src="img/photo01.jpg" /></li>
+            <li><img src="img/photo02.jpg" /></li>
+            <li><img src="img/photo03.jpg" /></li>
+            <li><img src="img/photo04.jpg" /></li>
+            <li><img src="img/photo05.jpg" /></li>
+        </ul>
+    </div>
+</body>
+</html>
