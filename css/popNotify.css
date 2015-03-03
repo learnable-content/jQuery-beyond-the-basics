@@ -1,0 +1,33 @@
+.popNotify {
+    position: fixed;
+    width:400px;
+    /*height:100px;*/
+    /*border:1px solid black;*/
+    left:0px;
+    top:0px;
+}
+
+.messageBox {
+    position: relative;
+    width:380px;
+    left:-370px;
+    height:60px;
+    margin:0px;
+    margin-top:20px;
+    background:rgba(250,180,0,1);
+    
+}
+
+.messageBox > h2 {
+    font-family:sans-serif;
+    position: absolute;
+    margin:0px;
+    font-size:17px;
+    height:20px;
+    top:0px;
+    bottom:0px;
+    margin:auto;
+    right:10px;
+    color:#FFF;
+    text-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}

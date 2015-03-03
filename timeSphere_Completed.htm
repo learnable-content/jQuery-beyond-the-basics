@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Queue Basics</title>
+    <link rel="stylesheet" href="css/timeSphere.css" type="text/css" />
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script>
+        $(function() {
+            
+            var logoBox = $('.logoBox');
+            var logo = $('#logo');
+            
+            (function loadQ() {
+                logoBox
+                .queue("openQ", function(next) {
+                    $(this).animate({
+                        width:'400px'
+                    },{
+                        duration:500,
+                        queue:false
+                    });
+
+                    next();
+                })
+                .queue("openQ", function(next)  {
+                    $(this).animate({
+                        opacity:1,
+                        height:'400px'
+                    },{
+                        duration:900,
+                        queue:false
+                    });
+
+                    next();
+                })
+                .queue("openQ", function(next) {
+                    $(this).animate({
+                        'border-radius':'200px'
+                    },{
+                        duration:1500,
+                        queue:false
+                    });
+
+                    next();
+                })
+                .queue("openQ", function(next) {
+                    logo.delay(1000).fadeIn(400);
+                    next();
+                })
+                .queue("closeQ", function(next) {
+                    logo.fadeOut(400);
+                    next();
+                })
+                .delay(400,"closeQ")
+                .queue("closeQ", function(next) {
+                    $(this).animate({
+                        'border-radius':'0px',
+                        opacity:0.4
+                    },{
+                        duration:400,
+                        queue:false
+                    });
+
+                    next();
+                })
+                .queue("closeQ", function(next) {
+                    $(this).animate({
+                        width:'2px',
+                        height:'100px'
+                    },{
+                        duration:500,
+                        queue:false
+                    });
+
+                    next();
+                })
+                .queue("closeQ", function() {
+                    loadQ();
+                    $(this).dequeue();
+                });
+            })();
+            
+            
+            
+            $('#openLogo').on("click", function() {
+                   $('.logoBox').dequeue("openQ");
+            });
+                
+            $('#closeLogo').on("click", function() {
+                   $('.logoBox').dequeue("closeQ");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="logoBox">
+        <img id="logo" src="img/timesphere.png" />
+    </div>
+    
+    <div class="buttons">
+        <a href="#" id="openLogo">Open</a>
+        <a href="#" id="closeLogo">Close</a>
+    </div>
+</body>
+</html>

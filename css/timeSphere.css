@@ -1,0 +1,69 @@
+.logoBox {
+    position: absolute;
+    width:2px;
+    height:100px;
+    background:rgb(200,0,0);
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin:auto;
+    opacity:0.5;
+    /*border:2px solid black;*/
+}
+
+#logo {
+    position: absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    width:315px;
+    height:315px;
+    margin:auto;
+    display:none;
+}
+
+.buttons {
+    position: absolute;
+    width:114px;
+    height:25px;
+    top:0px;
+    left:0px;
+    right:0px;
+    margin:auto;
+    background:rgba(0,0,0,0.1);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    overflow:hidden;
+    border:1px solid;
+}
+
+#openLogo {
+    position: absolute;
+    font-family:sans-serif;
+    padding:5px;
+    font-size:13px;
+    width:50px;
+    text-align:center;
+    background:rgb(0,220,0);
+    color:#000;
+    font-weight:bold;
+    text-decoration:none;
+    top:0px;
+    left:0px;
+}
+
+#closeLogo {
+    position: absolute;
+    font-family:sans-serif;
+    padding:5px;
+    font-size:13px;
+    width:50px;
+    text-align:center;
+    background:rgb(220,0,0);
+    color:#000;
+    font-weight:bold;
+    text-decoration:none;
+    left:54px;
+}

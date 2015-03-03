@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pop Notify</title>
+    <link rel="stylesheet" href="css/popNotify.css" type="text/css" />
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script>
+        $(function() {
+            var messages = [
+                "Hello Everyone !",
+                "I'm here to help you !",
+                "You can use me to notify the user",
+                "I use the jQuery queue method !"]; 
+            
+            var messageCounter = 0;
+            var messageBox = $('.messageBox');
+            var h2Tag = $('.messageBox > h2');
+
+            (function popNotify() {
+                h2Tag.text(messages[messageCounter]);
+                messageBox
+                    .animate({
+                        left:0
+                    }, 500)
+                    .delay(3000)
+                    .animate({
+                        left:-370
+                    }, 500)
+                    .delay(200)
+                    .queue(function() {
+                        if(messageCounter === messages.length - 1) {
+                            // Reset and Stop
+                            messages = [];
+                            messageCounter = 0;
+                        } else {
+                            // Increment Counter and Keep going
+                            messageCounter ++;
+                            popNotify();
+                        }
+                        $(this).dequeue();
+                    });
+            })();
+
+        });
+    </script>
+</head>
+<body>
+    <div class="popNotify">
+        <div class="messageBox"><h2>This is a message !</h2></div>
+    </div>
+</body>
+</html>
