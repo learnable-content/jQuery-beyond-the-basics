@@ -14,7 +14,7 @@ $age_Calc = date_diff($dob, date_create())->format('%y years %m months and %d da
 $date = (new DateTime())->format('jS \of F, Y');
 
 // Echo the age and a welcome string with today's date
-echo "Hi ".$u_name.", how are you doing ? Today is ".$date." and according to my calculations, you are ".$age_Calc." old !";
+echo "Hi ".$u_name.", how are you doing ? Today is ".$date." and according to my calculations, you are ".$age_Calc." old!";
 
 
 ?>
