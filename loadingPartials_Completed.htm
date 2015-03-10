@@ -8,10 +8,10 @@
     <script>
         $(function() {
            
-           var throbber = $('#throbber');
-           var contentPane = $('.contentPane');
+           var throbber = $("#throbber");
+           var contentPane = $(".contentPane");
            
-           $('.navlinks').on("click", function(evt) {
+           $(".navlinks").on("click", function(evt) {
                evt.preventDefault();
                evt.stopPropagation();
                
@@ -21,7 +21,7 @@
                        throbber.fadeIn(100);
                        $(this).dequeue();
                    })
-                   .load($(this).attr('href'), function(response, status, xhr) {
+                   .load($(this).attr("href"), function(response, status, xhr) {
                        if(status === "success") {
                            throbber.fadeOut(100);
                            $(this).fadeIn(1000);
