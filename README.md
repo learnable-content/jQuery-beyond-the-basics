@@ -23,4 +23,6 @@ In this course, we leap forward from selectors and basic DOM manipulation techni
 * Our next stop will allow us to deep dive into AJAX with jQuery. We'll go hands-on with jQuery's AJAX methods that allow us to send and fetch data and also allows us to interact with third-party API providers for integrating amazing services and features into your app.
 * Our final stop will be to explore the world of jQuery plugins. We'll have a look at four types of commonly used plugins and you'll also get to write your very own jQuery plugin.
 
-So, let's begin!
+#What's next?
+
+View all handouts for the course [jQuery: Beyond the Basics ](https://www.sitepoint.com/premium/courses/jquery-beyond-the-basics-2898) on [Lesson 1.1](https://github.com/learnable-content/jQuery-beyond-the-basics/tree/lesson1.1)
