@@ -1,4 +1,4 @@
-![](jQuery_Beyond_the_Basics_handouts/headers/Sachin_Lesson_2.8.jpg)
+![](headers/Sachin_Lesson_2.8.jpg)
 # Introduction to smooth scrolling
 
 Among other things, jQuery's `animate` method lets you play with scrolling on a web page. With this you can easily get your pages to scroll smoothly. Nowadays single page websites are widespread and smooth scrolling is almost a necessity.
