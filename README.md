@@ -1,4 +1,4 @@
-![](headers/Sachin_Lesson_3.6.jpg)
+![](jQuery_Beyond_the_Basics_handouts/headers/Sachin_Lesson_3.6.jpg)
 # Introduction to jQuery $.ajax method
 
 So far all the AJAX methods that we have seen in this lesson were shorthands. If you want full-fledged control, however, the jQuery offers the `$.ajax` method:
