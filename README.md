@@ -1,4 +1,4 @@
-![](headers/Sachin_Lesson_4.6.jpg)
+![](jQuery_Beyond_the_Basics_handouts/headers/Sachin_Lesson_4.6.jpg)
 # Introduction to writing jQuery plugins
 
 We are going to examine the steps that it takes to build jQuery plugin. Writing your own plugin means that you can easily create reusable modules and features that you can drop into any website with ease.
