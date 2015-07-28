@@ -1,4 +1,4 @@
-![](headers/Sachin_Lesson_3.2.jpg)
+![](jQuery_Beyond_the_Basics_handouts/headers/Sachin_Lesson_3.2.jpg)
 # Introduction to loading partials using AJAX
 
 It's time to put theory into practice. The first AJAX usage scenario that we'll examine involves loading HTML content from separate files onto a single page.
