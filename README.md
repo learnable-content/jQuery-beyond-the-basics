@@ -1,4 +1,4 @@
-![](headers/Sachin_Lesson_4.5.jpg)
+![](jQuery_Beyond_the_Basics_handouts/headers/Sachin_Lesson_4.5.jpg)
 # Introduction to form validation with jQuery plugins
 
 Forms allow the user to fill in data that can be used for a variety of things. But ensuring format accuracy and validity can be a pretty complex task. Therefore, a form validator implementation is an absolute must for all websites that carry some sort of a form for capturing user input. Things like email addresses, phone numbers, credit card numbers, and passwords require strong validity checks before they can be passed on to the server.
