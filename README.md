@@ -1,4 +1,4 @@
-![](headers/Sachin_Lesson_3.1.jpg)
+![](jQuery_Beyond_the_Basics_handouts/headers/Sachin_Lesson_3.1.jpg)
 # Introduction to AJAX
 
 In this lesson, we will discuss **AJAX**.
