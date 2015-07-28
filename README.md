@@ -1,4 +1,4 @@
-![](headers/Sachin_Lesson_4.1.jpg)
+![](jQuery_Beyond_the_Basics_handouts/headers/Sachin_Lesson_4.1.jpg)
 # Introduction to jQuery plugins
 
 What is really great about jQuery is that you can think of it as an engine giving you the ability to create your own car around it. By allowing developers to extend its native abilities, jQuery has given rise to an ecosystem of **plugins**, or scripts, that run cohesively with jQuery as their backbone to deliver ready-to-use features - **widgets**.
