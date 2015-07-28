@@ -1,4 +1,4 @@
-![](headers/Sachin_Lesson_2.6.jpg)
+![](jQuery_Beyond_the_Basics_handouts/headers/Sachin_Lesson_2.6.jpg)
 # Introduction to staggering animation
 
 We can easily use multiple `animate` methods on multiple elements since they don't interfere with each other and work independently. Imagine there are five elements and we have animated their widths individually using five instances of the `animate` method. All these elements will be animated simultaneously. But what if you wanted to begin animation after the previous one has ended?
