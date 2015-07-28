@@ -1,4 +1,4 @@
-![](headers/Sachin_Lesson_2.1.jpg)
+![](jQuery_Beyond_the_Basics_handouts/headers/Sachin_Lesson_2.1.jpg)
 # Introduction to animation 
 
 **Animation** means changing property's value over time. When we talk about web and animation in the same sentence, probably **Flash** comes to mind first. Until recently Flash used to be the only way to present rich animation on the web. All that changed after Steve Jobs literally wrote off Flash's future in 2010 in favour of HTML 5. Apple has decided not to support Flash on iOS mobile and handheld devices. All this led to a slow but persistent movement against the use of Flash: nowadays it is much less widespread.
