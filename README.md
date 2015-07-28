@@ -1,4 +1,4 @@
-![](headers/Sachin_Lesson_2.4.jpg)
+![](jQuery_Beyond_the_Basics_handouts/headers/Sachin_Lesson_2.4.jpg)
 # Introduction to animating CSS properties
 
 So far, you've seen how an element's visibility can be animated. But visibility is not the only thing that you can animate. We are going to talk about CSS properties that are numeric in nature, such as `top`, `bottom`, `left`, `right`, `width`, `height`, and so on. Also we will see how to animate properties with alphanumeric values. But first, let's take a look at jQuery's `animate` method.
