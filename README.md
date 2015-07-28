@@ -1,4 +1,4 @@
-![](headers/Sachin_Lesson_3.5.jpg)
+![](jQuery_Beyond_the_Basics_handouts/headers/Sachin_Lesson_3.5.jpg)
 # Introduction to AJAX POST with jQuery:
 
 jQuery provides us with the `$.post` method to perform POST requests to a given URL:
