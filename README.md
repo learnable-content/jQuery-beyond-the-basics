@@ -1,4 +1,4 @@
-![](headers/Sachin_Lesson_3.4.jpg)
+![](jQuery_Beyond_the_Basics_handouts/headers/Sachin_Lesson_3.4.jpg)
 # Introduction to APIs
 
 Modern websites and mobile apps access and send data to all sorts of third party services. This is achieved through an **application programming interface (API)**. Your web app sends a request to a third party API and it responds back with data which your app then consumes. Web apps thus employ AJAX to access these APIs.
