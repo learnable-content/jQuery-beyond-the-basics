@@ -1,4 +1,4 @@
-![](headers/Sachin_Lesson_2.3.jpg)
+![](jQuery_Beyond_the_Basics_handouts/headers/Sachin_Lesson_2.3.jpg)
 # Planning a Slideshow with fade in and out
 
 At the previous step, we explored jQuery's fade methods that let you play with an element's visibility by animating its opacity. Now we are going create a simple photo slideshow that will loop through a given set of images by fading them in and out. The actual HTML layout of the slideshow structure mainly contains an unordered list, where each list item contains an image tag with a given image.
