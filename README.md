@@ -1,4 +1,4 @@
-![](headers/Sachin_Lesson_3.3.jpg)
+![](jQuery_Beyond_the_Basics_handouts/headers/Sachin_Lesson_3.3.jpg)
 # Introduction to JSON format
 
 By definition AJAX seems to imply that it only accepts XML, but in reality AJAX works with all kinds of formats. Perhaps the most widely used format these days is **JSON* (Java Script Object Notation)**. It is a standard JavaScript object with key-value pairs that describe fields and their contents. A block of data enclosed within curly brackets can contain multiple key-value pairs separated by commas. Values can range from strings to numbers to arrays and even JavaScript objects.
