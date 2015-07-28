@@ -1,4 +1,4 @@
-![](headers/Sachin_Lesson_4.4.jpg)
+![](jQuery_Beyond_the_Basics_handouts/headers/Sachin_Lesson_4.4.jpg)
 # Introduction to parallax scrolling
 
 These days, a lot of websites are made as a single page scrolling site, and almost all of them feature an effect known as **parallax scrolling**. Basically this means that the images in the background appear to be placed at a different visual depth than the text on the top and this gives an impression of three dimensional motion.
