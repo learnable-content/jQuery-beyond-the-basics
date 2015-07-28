@@ -1,4 +1,4 @@
-![](headers/Sachin_Lesson_2.7.jpg)
+![](jQuery_Beyond_the_Basics_handouts/headers/Sachin_Lesson_2.7.jpg)
 # Introduction to jQuery animation queue
 
 At this step we are going to discuss **animation queuing**. If we pipe in multiple effects on the same element, such as `slideDown`, `slideUp`, `animate` etc, these effects will queue up in the **fx queue** and be executed in a sequential manner.
