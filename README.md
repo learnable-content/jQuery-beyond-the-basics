@@ -1,4 +1,4 @@
-![](headers/Sachin_Lesson_2.2.jpg)
+![](jQuery_Beyond_the_Basics_handouts/headers/Sachin_Lesson_2.2.jpg)
 # Introduction to element visibility
 
 When working with dynamic user interfaces, in many cases we want to control the visibility of elements such as buttons, images, and other status indicators and widgets. Changes made to the visibility of an element can have a major effect on the user's perception about the status of the feature that it represents. Good design practices, however, dictate that a sudden change in an elements' visibility, such as as a button that is instantly made invisible, might either go unnoticed or produce a jarring uncomfortable effect on the users perception. Therefore, modern web apps and sites employ subtle animation effects when changing element visibility states.
