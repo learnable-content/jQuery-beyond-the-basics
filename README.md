@@ -1,4 +1,4 @@
-![](headers/Sachin_Lesson_2.5.jpg)
+![](jQuery_Beyond_the_Basics_handouts/headers/Sachin_Lesson_2.5.jpg)
 # Planning the development of animated menu
 
 At this step we are going to build an animated menu using jQuery's `animate` method.
