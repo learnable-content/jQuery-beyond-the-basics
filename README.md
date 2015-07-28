@@ -1,4 +1,4 @@
-![](headers/Sachin_Lesson_4.3.jpg)
+![](jQuery_Beyond_the_Basics_handouts/headers/Sachin_Lesson_4.3.jpg)
 # Introduction to modal dialogs
 
 **Modal dialogs** are used to grab user attention. Using JavaScript, you can easily invoke the `alert` modal dialog which can be used to display a message. If you want the user to provide a feedback action to your message, you can invoke the `confirm` or the `prompt` dialogs.
