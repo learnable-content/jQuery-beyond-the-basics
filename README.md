@@ -1,4 +1,4 @@
-![](headers/Sachin_Lesson_4.2.jpg)
+![](jQuery_Beyond_the_Basics_handouts/headers/Sachin_Lesson_4.2.jpg)
 # Introduction to Carousel
 
 These days a lot of websites present a carousel feature that lets you display content in either an animated slideshow format or a touch-enabled interactive panel that users can swipe left or right.
